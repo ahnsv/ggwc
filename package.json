@@ -1,0 +1,21 @@
+{
+  "name": "ggwc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "deploy": "now"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.14",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@now/next": "^0.4.0"
+  }
+}
