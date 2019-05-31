@@ -1,8 +1,8 @@
 import React from 'react'
-import ReactFullpage from '@fullpage/react-fullpage';
-import Main from '../layout/main'
+import Main from "../../layout/main";
+import ReactFullpage from "@fullpage/react-fullpage";
 
-const Index = () => {
+const Sessions = () => {
     return (
         <Main>
             <ReactFullpage navigation={true}
@@ -13,7 +13,12 @@ const Index = () => {
                                            <h1>Section 1</h1>
                                        </div>
                                        <div className="section">
-                                           <h1>Section 2</h1>
+                                           <div className="slides">
+                                               <div className="slide">1</div>
+                                               <div className="slide">1</div>
+                                               <div className="slide">1</div>
+                                               <div className="slide">1</div>
+                                           </div>
                                        </div>
                                        <div className="section">
                                            <h1>Section 3</h1>
@@ -28,7 +33,7 @@ const Index = () => {
                             `}</style>
                                        <style jsx>{`
                         .section {
-                            background-color: lightcoral;
+                            background-color: lightblue;
                             text-align: center;
                         }
                         .section > * {
@@ -48,5 +53,4 @@ const Index = () => {
     )
 };
 
-export default Index;
-
+export default Sessions
