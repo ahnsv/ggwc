@@ -4,6 +4,7 @@ import Link from 'next/link'
 const Menu = () => (
     <div
         className="menu"
+        id={`menu`}
         style={{
             position: 'fixed',
             top: 0,

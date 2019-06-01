@@ -5,7 +5,7 @@ import Main from '../layout/main'
 const Index = () => {
     return (
         <Main>
-            <ReactFullpage navigation={true}
+            <ReactFullpage navigation={true} menu={`#menu`}
                            render={({state, fullpageApi}) => {
                                return (
                                    <ReactFullpage.Wrapper>
