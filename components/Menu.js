@@ -28,14 +28,14 @@ const Menu = () => (
             <li>
                 <Link href={`/sessions`}>
                     <a className={`menu-items--link`}>
-                        세션
+                        재능공유
                     </a>
                 </Link>
             </li>
             <li>
-                <Link href={`#`}>
+                <Link href={`/talk`}>
                     <a className={`menu-items--link`}>
-                        Menu
+                        체계단톡
                     </a>
                 </Link>
             </li>

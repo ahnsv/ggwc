@@ -21,11 +21,6 @@ const Index = () => {
                                        <div className="section">
                                            <h1>Section 4</h1>
                                        </div>
-                                       <style jsx global>{`
-                                body {
-                                    font-family: 'Noto Sans KR', sans-serif;
-                                }
-                            `}</style>
                                        <style jsx>{`
                         .section {
                             background-color: lightcoral;

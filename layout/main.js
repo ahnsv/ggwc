@@ -5,7 +5,7 @@ import Menu from "../components/Menu";
 const Main = ({children}) => (
     <div className={`main`}>
         <Head>
-            <title>테스트</title>
+            <title>계룡전산한마당</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
             <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,900&display=swap"
                   rel="stylesheet"/>

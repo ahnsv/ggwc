@@ -22,24 +22,23 @@ export default class MyApp extends App {
                 </PageTransition>
                 <style jsx global>{`
           
+                    body {
+                    font-family: 'Noto Sans KR', sans-serif;
+                    }
                   .page-transition-enter {
                       opacity: 0.4;
-                      transform: translateY(-20px);
                       position: absolute;
                     }
                     .page-transition-enter.page-transition-enter-active {
-                      transform: translateY(0px);
                       transition: all 400ms cubic-bezier(.215,.61,.355,1);
                       opacity: 1;
                     }
                     .page-transition-leave {
-                      transform: translateY(0px);
                       opacity: 1;
                       position: absolute;
                     }
                     .page-transition-leave.page-transition-leave-active {
                       opacity: 0.4;
-                      transform: translateY(20px);
                       transition: 400ms cubic-bezier(.215,.61,.355,1);
                       transition-properties: transform, opacity;
                     }
