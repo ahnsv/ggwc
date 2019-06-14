@@ -5,45 +5,58 @@ import ReactFullpage from "@fullpage/react-fullpage";
 const Talk = () => (
     <Main>
         <ReactFullpage navigation={true} controlArrows={false}
-                       menu={`#menu`} sectionsColor={['#4BBFC3', '#ff6f61', 'lightgrey', "#dc143c", "lightcoral", "#00ffd0"]}
+                       menu={`#menu`} sectionsColor={['#FF9800', '#607D8B', "lightcoral"]}
                        continuousVertical={true} fadingEffect={'sections'}
+                       slidesNavigation={true}
                        render={({state, fullpageApi}) => {
                            return (
                                <ReactFullpage.Wrapper>
-                                   <div className="section">
+                                   <div className="section" style={{color: 'white'}}>
                                        <div className="slides">
                                            <div className="slide">
-                                               <div className="slide-row">
+                                               <div className="slide-row" style={{color: 'white'}}>
                                                    <div className="slide-col">
-                                                       <div className="session--profile" style={{backgroundImage: 'url("/static/goo2.jpg")'}}>
+                                                       <div className="session--profile"
+                                                            style={{backgroundImage: 'url("/static/goo2.jpg")'}}>
                                                        </div>
                                                        <div className="session--speaker">구본호</div>
                                                    </div>
-                                                   <div className="slide-col" style={{ padding: '0 10%', textAlign: 'left'}}>
+                                                   <div className="slide-col"
+                                                        style={{padding: '0 10%', textAlign: 'left'}}>
                                                        <div className="session--program">
                                                            <div className="session--program__title">
                                                                사람들이 버리는 가치를 줍는 개발
                                                            </div>
                                                            <div className="session--program__targets">
-                                                               Crowd Courcing, Gamification이 무엇인지 알아보고 싶은 사람, 공공을 위한 개발에 대해 궁금한 사람.
+                                                               Crowd Courcing, Gamification이 무엇인지 알아보고 싶은 사람, 공공을 위한 개발에
+                                                               대해 궁금한 사람.
                                                            </div>
                                                        </div>
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="slide">1</div>
-                                           <div className="slide">1</div>
+                                           <div className="slide">
+                                               <div className="slide-row">
+                                                   <div>프로그램 개요</div>
+                                                   <p>
+                                                       개발자로서 가지고 있는 개발 철학에 대해 같이 이야기해보고, 이를 구현하기 좋은 Crowd Sourcing,
+                                                       Gamification 기술에 대해 소개한다.
+                                                   </p>
+                                               </div>
+                                           </div>
                                        </div>
                                    </div>
-                                   <div className="section">
+                                   <div className="section" style={{color: 'white'}}>
                                        <div className="slides">
                                            <div className="slide">
                                                <div className="slide-row">
                                                    <div className="slide-col">
-                                                       <div className="session--profile" style={{backgroundImage: 'url(/static/suh.jpg)'}}/>
+                                                       <div className="session--profile"
+                                                            style={{backgroundImage: 'url(/static/suh.jpg)'}}/>
                                                        <div className="session--speaker">서희강</div>
                                                    </div>
-                                                   <div className="slide-col" style={{ padding: '0 10%', textAlign: 'left'}}>
+                                                   <div className="slide-col"
+                                                        style={{padding: '0 10%', textAlign: 'left'}}>
                                                        <div className="session--program">
                                                            <div className="session--program__title">
                                                                핵심 목표에 도달하기
@@ -55,19 +68,28 @@ const Talk = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="slide">1</div>
-                                           <div className="slide">1</div>
+                                           <div className="slide">
+                                               <div className="slide-row">
+                                                   <div>프로그램 개요</div>
+                                                   <p>
+                                                       공군의복캐릭터를 개발하여 iF디자인어워드를 수상한 배경을 통해, 핵심목표를 설계하고 이에 도달하는 기법에 대해
+                                                       말한다.
+                                                   </p>
+                                               </div>
+                                           </div>
                                        </div>
                                    </div>
-                                   <div className="section">
+                                   <div className="section" style={{color: 'white'}}>
                                        <div className="slides">
                                            <div className="slide">
-                                               <div className="slide-row" style={{color: 'white'}}>
+                                               <div className="slide-row">
                                                    <div className="slide-col">
-                                                       <div className="session--profile" style={{backgroundImage: 'url("/static/ahn.jpg")'}}/>
+                                                       <div className="session--profile"
+                                                            style={{backgroundImage: 'url("/static/ahn.jpg")'}}/>
                                                        <div className="session--speaker">안상태</div>
                                                    </div>
-                                                   <div className="slide-col" style={{ padding: '0 10%', textAlign: 'left'}}>
+                                                   <div className="slide-col"
+                                                        style={{padding: '0 10%', textAlign: 'left'}}>
                                                        <div className="session--program">
                                                            <div className="session--program__title">
                                                                Being a student and tourist, not a prisoner
@@ -79,8 +101,6 @@ const Talk = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="slide">1</div>
-                                           <div className="slide">1</div>
                                        </div>
                                    </div>
                                    <style jsx global>{`
@@ -106,13 +126,19 @@ const Talk = () => (
                             font-size: 0.8em;
                             padding: 0 10vw;
                             word-break: keep-all;
+                            align-items: center;
                        } 
+                       .slide-row p {
+                            flex: auto;
+                            padding: 0 10%;
+                       }
                        .slide-col {
                             flex: 1 1 auto;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
+                            max-width: 300px;
                        }
                        .session--profile {
                             width: 100px;

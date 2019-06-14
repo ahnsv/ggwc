@@ -16,8 +16,11 @@ const Main = ({children}) => (
                             }
                             #fp-nav ul li a span {
                                 background: whitesmoke !important;
+                                border-radius: 20% !important;
                             }
-                            
+                            .fp-slidesNav ul li a span {
+                                border-radius: 20% !important;
+                            }
                           `}
             </style>
         </Head>
