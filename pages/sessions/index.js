@@ -375,6 +375,7 @@ const Sessions = () => {
                             padding: 0 10vw;
                             word-break: keep-all;
                             align-items: center;
+                            font-size: 1rem;
                        } 
                        .slide-row div {
                             // font-weight: bold;

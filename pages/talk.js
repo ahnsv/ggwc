@@ -155,6 +155,9 @@ const Talk = () => (
                             font-size: 1.3rem;
                             font-weight: bold;
                        }
+                       .session--program__targets {
+                            font-size: 1rem;
+                       }
                         
                         `}</style>
                                </ReactFullpage.Wrapper>

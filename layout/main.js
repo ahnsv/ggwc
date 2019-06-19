@@ -8,7 +8,7 @@ const Main = ({children}) => {
             <Head>
                 <title>계룡전산한마당</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-                <link rel="icon" href="/static/logos/logo.svg"/>
+                <link rel="icon" href="/static/logos/logo_mini.png"/>
                 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,900&display=swap"
                       rel="stylesheet"/>
                 <style>
