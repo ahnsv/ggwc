@@ -11,20 +11,22 @@ const Index = () => {
                                return (
                                    <ReactFullpage.Wrapper>
                                        <div className="section" id="intro">
-                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 111.73" style={{width: '50%', height: '50%', fill: 'white'}}>
+                                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 111.73"
+                                                style={{width: '50%', height: '50%', fill: 'white'}}>
                                                <defs/>
                                                <title>자산 1</title>
                                                <g id="레이어_2" data-name="레이어 2">
                                                    <g id="레이어_1-2" data-name="레이어 1">
-                                                       <path class="cls-1" id={`first`}
+                                                       <path className="cls-1" id={`first`}
                                                              d="M20.56,30.5A37.82,37.82,0,0,0,26,26a37.82,37.82,0,0,0,4.49-5.45,36.22,36.22,0,0,0,3.39-6.24A36.57,36.57,0,0,0,36.78,0H0V36.78a36.57,36.57,0,0,0,14.32-2.89A36.22,36.22,0,0,0,20.56,30.5Z"/>
-                                                       <polygon class="cls-1" id={`third`}
+                                                       <polygon className="cls-1" id={`third`}
                                                                 points="58.92 0 58.92 36.58 58.92 36.78 59.12 36.78 79 36.78 79 36.78 79 0 58.92 0"/>
-                                                       <polygon class="cls-1" id={`second`}
+                                                       <polygon className="cls-1" id={`second`}
                                                                 points="37.71 36.78 37.91 36.78 57.79 36.78 57.99 36.78 57.99 36.58 57.99 0 37.71 0 37.71 36.58 37.71 36.78"/>
-                                                       <ellipse class="cls-1" id={`fourth`} cx="39.5" cy="93.54" rx="39.5"
+                                                       <ellipse className="cls-1" id={`fourth`} cx="39.5" cy="93.54"
+                                                                rx="39.5"
                                                                 ry="18.19"/>
-                                                       <path class="cls-1" id={`last`}
+                                                       <path className="cls-1" id={`last`}
                                                              d="M79,38.51H0V50H42.4v.92H0V74.43H79V38.51Zm-.2,24.28H36.69v-.92H78.8Z"/>
                                                    </g>
                                                </g>
@@ -33,9 +35,14 @@ const Index = () => {
                                                전산 <br/>
                                                한-마당</h1>
                                        </div>
+                                       <div className="section" style={{color: 'white', fontWeight: 'bold'}}>
+                                           Slack: https://gyeryongdevmeetup.slack.com
+                                           Notion:
+                                           https://www.notion.so/gitit/GIT_IT-Notion-65eb7c50072441c19d2797f4f3481860
+                                       </div>
                                        <style jsx>{`
                         .section {
-                            background-color: lightcoral;
+                            background-color: #d32036;
                             text-align: center;
                         }
                         .section > * {
